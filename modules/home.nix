@@ -1,7 +1,12 @@
 { self, inputs, ... }:
 {
   flake.nixosModules.home =
-    { pkgs, config, lib, ... }:
+    {
+      pkgs,
+      config,
+      lib,
+      ...
+    }:
 
     {
       home-manager = {
@@ -24,13 +29,14 @@
         };
 
         home.packages = with pkgs; [
+          # Packages that don't need configuration
           neovim
           ripgrep
           nil
           nixpkgs-fmt
           nodejs
           gcc
-	  ghostty
+          ghostty
         ];
       };
     };

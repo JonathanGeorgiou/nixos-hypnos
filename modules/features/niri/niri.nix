@@ -13,6 +13,10 @@
         enable = true;
       };
 
+      environment.systemPackages = with pkgs; [
+        wl-clipboard
+      ];
+
       home-manager.users.jonathan =
         { config, ... }:
         {
