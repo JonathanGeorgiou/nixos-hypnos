@@ -17,6 +17,7 @@
         self.nixosModules.home
         self.nixosModules.niri
         self.nixosModules.noctalia
+        self.nixosModules.nvim
       ];
 
       nix.settings.experimental-features = [

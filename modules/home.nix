@@ -30,7 +30,6 @@
 
         home.packages = with pkgs; [
           # Packages that don't need configuration
-          neovim
           ripgrep
           nil
           nixpkgs-fmt
