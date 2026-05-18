@@ -15,8 +15,7 @@
       imports = [
         self.nixosModules.vmHardware
         self.nixosModules.home
-        self.nixosModules.niri
-        self.nixosModules.noctalia
+        self.nixosModules.desktop
         self.nixosModules.nvim
       ];
 
