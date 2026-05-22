@@ -8,7 +8,7 @@
       ...
     }:
     {
-
+      imports = [ inputs.home-manager.nixosModules.home-manager ];
       home-manager.users.jonathan =
         { config, pkgs, ... }:
         {
@@ -17,9 +17,8 @@
             viAlias = true;
             vimAlias = true;
           };
-          # Tell Home Manager to symlink your config file directly from your dotfiles directory
           xdg.configFile."nvim".source =
-            config.lib.file.mkOutOfStoreSymlink "${self}/modules/features/neovim/nvim";
+            config.lib.file.mkOutOfStoreSymlink "/home/jonathan/nixos-hypnos/modules/features/neovim/nvim";
 
         };
     };

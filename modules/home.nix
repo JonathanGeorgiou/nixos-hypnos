@@ -20,7 +20,14 @@
         home.homeDirectory = "/home/jonathan";
         home.stateVersion = "25.11";
 
-        programs.git.enable = true;
+        programs.git = {
+          enable = true;
+          settings = {
+            user.name = "JonathanGeorgiou";
+            user.email = "j.georgiou94@gmail.com";
+
+          };
+        };
         programs.bash = {
           enable = true;
           shellAliases = {
@@ -30,12 +37,12 @@
 
         home.packages = with pkgs; [
           # Packages that don't need configuration
-          ripgrep
-          nil
-          nixpkgs-fmt
-          nodejs
-          gcc
-          ghostty
+          ripgrep # move to neovim?
+          nil # move to neovim?
+          nixpkgs-fmt # move to neovim?
+          nodejs # move to neovim?
+          gcc # move to neovim?
+          ghostty # create module
         ];
       };
     };
