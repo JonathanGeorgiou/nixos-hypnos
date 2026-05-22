@@ -35,6 +35,12 @@
           };
         };
 
+        stylix = {
+          targets.noctalia-shell.enable = false;
+          targets.neovim.enable = false;
+          targets.ghostty.enable = false;
+        };
+
         home.packages = with pkgs; [
           # Packages that don't need configuration
           ripgrep # move to neovim?

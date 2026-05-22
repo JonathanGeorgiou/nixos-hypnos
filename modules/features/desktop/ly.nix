@@ -12,9 +12,10 @@
       services.displayManager.ly = {
         enable = true;
         settings = {
-          animation = "doom";
+          animation = "colormix";
           bigclock = "en";
           box_title = "Welcome, Colossus";
+          initial_info_text = "Welcome, Colossus";
           };
         };
 
