@@ -26,7 +26,7 @@
           enable = true;
           shellAliases = {
             nrs = "sudo nixos-rebuild switch --flake ~/nixos-hypnos#vm";
-            lg = "lazygit";
+            lg = "zellij run --floating --close-on-exit --width 80% --height 80% --x 10% --y 10% -- lazygit";
           };
         };
 

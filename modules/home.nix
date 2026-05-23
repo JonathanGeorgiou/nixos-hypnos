@@ -24,6 +24,24 @@
           targets.noctalia-shell.enable = false;
           targets.neovim.enable = false;
           targets.ghostty.enable = false;
+          targets.firefox = { 
+            enable = true;
+            profileNames = ["default"];
+            colors.enable = true;
+          };
+        };
+
+        programs.firefox = {
+          enable = true;
+          profiles = {
+            default = {
+              id = 0;
+              isDefault = true;
+              settings = {
+                "browser.startup.page" = 3;
+              };
+            };
+          };
         };
 
         home.packages = with pkgs; [

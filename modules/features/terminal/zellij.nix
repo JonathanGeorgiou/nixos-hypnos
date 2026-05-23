@@ -11,6 +11,7 @@
           enable = true;
           enableFishIntegration = true;
           settings.default_mode = "locked";
+          settings.default_shell = "fish";
           settings.copy_command = "wl-copy";
           settings.show_startup_tips = false;
           settings.plugins = {
@@ -360,6 +361,20 @@
             "shared_except \"locked\" \"renametab\" \"renamepane\""._children = [
               { bind = { _args = [ "Ctrl g" ]; SwitchToMode = [ "locked" ]; }; }
               { bind = { _args = [ "Ctrl q" ]; Quit = {}; }; }
+              {
+                bind = {
+                  _args = [ "Alt g" ];
+                  Run = {
+                    _args = [ "lazygit" ];
+                    floating = [ "true" ];
+                    close_on_exit = [ "true" ];
+                    width = [ "80%" ];
+                    height = [ "80%" ];
+                    x = [ "10%" ];
+                    y = [ "10%" ];
+                  };
+                };
+              }
             ];
 
             "shared_except \"locked\" \"entersearch\""._children = [

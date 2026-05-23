@@ -274,6 +274,7 @@ binds {
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L { spawn-sh "noctalia-shell ipc call lockScreen lock"; }
     Mod+Space { spawn-sh "noctalia-shell ipc call launcher toggle"; }
+    Mod+P { spawn-sh "noctalia-shell ipc call sessionMenu toggle"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.

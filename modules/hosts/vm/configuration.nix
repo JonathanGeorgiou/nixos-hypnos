@@ -79,7 +79,7 @@
         wget
         neovim
         git
-        firefox
+        ghostty
       ];
 
       # Enable the OpenSSH daemon.
