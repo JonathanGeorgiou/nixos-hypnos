@@ -17,6 +17,7 @@
         self.nixosModules.home
         self.nixosModules.desktop
         self.nixosModules.nvim
+        self.nixosModules.terminal
       ];
 
       nix.settings.experimental-features = [
