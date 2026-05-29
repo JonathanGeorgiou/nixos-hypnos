@@ -47,7 +47,7 @@
         "capsuleColorKey": "none",
         "capsuleOpacity": 1,
         "contentPadding": 2,
-        "density": "comfortable",
+        "density": "spacious",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": true,
         "fontScale": 1,
@@ -114,8 +114,8 @@
                 {
                     "clockColor": "none",
                     "customFont": "",
-                    "formatHorizontal": "HH:mm ddd, MMM dd",
-                    "formatVertical": "HH mm - dd MM",
+                    "formatHorizontal": "HH:mm ddd, dd MMM",
+                    "formatVertical": "HH:mm - dd MMM",
                     "id": "Clock",
                     "tooltipFormat": "HH:mm ddd, MMM dd",
                     "useCustomFont": false

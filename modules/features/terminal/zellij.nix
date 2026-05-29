@@ -330,6 +330,20 @@
               { bind = { _args = [ "Alt q" ]; CloseFocus = {}; }; }
               { bind = { _args = [ "Alt ." ]; GoToNextTab = {}; }; }
               { bind = { _args = [ "Alt ," ]; GoToPreviousTab = {}; }; }
+              {
+                bind = {
+                  _args = [ "Alt g" ];
+                  Run = {
+                    _args = [ "lazygit" ];
+                    floating = [ "true" ];
+                    close_on_exit = [ "true" ];
+                    width = [ "80%" ];
+                    height = [ "80%" ];
+                    x = [ "10%" ];
+                    y = [ "10%" ];
+                  };
+                };
+              }
             ];
 
             "shared_among \"scroll\" \"search\""._children = [
@@ -361,20 +375,7 @@
             "shared_except \"locked\" \"renametab\" \"renamepane\""._children = [
               { bind = { _args = [ "Ctrl g" ]; SwitchToMode = [ "locked" ]; }; }
               { bind = { _args = [ "Ctrl q" ]; Quit = {}; }; }
-              {
-                bind = {
-                  _args = [ "Alt g" ];
-                  Run = {
-                    _args = [ "lazygit" ];
-                    floating = [ "true" ];
-                    close_on_exit = [ "true" ];
-                    width = [ "80%" ];
-                    height = [ "80%" ];
-                    x = [ "10%" ];
-                    y = [ "10%" ];
-                  };
-                };
-              }
+              
             ];
 
             "shared_except \"locked\" \"entersearch\""._children = [
