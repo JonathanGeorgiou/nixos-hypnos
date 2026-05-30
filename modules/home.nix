@@ -23,6 +23,7 @@
         stylix = {
           targets.noctalia-shell.enable = false;
           targets.neovim.enable = false;
+          targets.gnome.enable = false;
           targets.ghostty.enable = false;
           targets.firefox = { 
             enable = true;

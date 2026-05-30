@@ -13,6 +13,7 @@
           settings.default_mode = "locked";
           settings.default_shell = "fish";
           settings.copy_command = "wl-copy";
+          settings.session_name = "Main Session";
           settings.show_startup_tips = false;
           settings.plugins = {
           compact-bar._args = [ "location=\"zellij:compact-bar\"" ];

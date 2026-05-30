@@ -18,14 +18,14 @@
         programs.bash = {
           enable = true;
           shellAliases = {
-            nrs = "sudo nixos-rebuild switch --flake ~/nixos-hypnos#vm";
+            nrs = "sudo nixos-rebuild switch --flake ~/nixos-hypnos#heraklion";
           };
         };
 
         programs.fish = {
           enable = true;
           shellAliases = {
-            nrs = "sudo nixos-rebuild switch --flake ~/nixos-hypnos#vm";
+            nrs = "sudo nixos-rebuild switch --flake ~/nixos-hypnos#heraklion";
             lg = "zellij run --floating --close-on-exit --width 80% --height 80% --x 10% --y 10% -- lazygit";
           };
         };
