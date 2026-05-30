@@ -1,0 +1,18 @@
+layout {
+  tab {
+    pane size=1 borderless=true {
+      plugin location="tab-bar"
+    }
+    pane split-direction="horizontal" {
+      pane size="75%" {
+        command "nvim" close_on_exit=false
+        args "."
+      }
+      pane size="25%" {
+      }
+    }
+    pane size=1 borderless=true {
+      plugin location="status-bar"
+    }
+  }
+}
