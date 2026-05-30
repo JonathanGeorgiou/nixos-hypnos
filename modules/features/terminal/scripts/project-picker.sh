@@ -22,6 +22,6 @@ PROJECT=$(find ~ ~/development ~/.config ~/Projects -mindepth 1 -maxdepth 1 -typ
 PROJECT_NAME=$(basename "$PROJECT")
 
 zellij action new-tab \
-  --layout ~/.config/zellij/code.kdl \
+  --layout ~/.config/zellij/layouts/code.kdl \
   --cwd "$PROJECT" \
   --name "$PROJECT_NAME"
