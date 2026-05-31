@@ -15,7 +15,7 @@
       self.nixosModules.desktop
       self.nixosModules.nvim
       self.nixosModules.terminal
-    ];
+      self.nixosModules.godoblender
 
     nix.settings.experimental-features = [
       "nix-command"
@@ -82,7 +82,8 @@
       ];
     };
 
-    # programs.firefox.enable = true;
+    # needed to fix third party binary issues
+    programs.nix-ld.enable = true;
 
     # List packages installed in system profile.
     # You can use https://search.nixos.org/ to find more packages (and options).

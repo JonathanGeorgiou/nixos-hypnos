@@ -3,7 +3,7 @@ layout {
     pane size=1 borderless=true {
       plugin location="tab-bar"
     }
-    pane split-direction="horizontal" {
+    pane split_direction="horizontal" {
       pane size="75%" {
         command "nvim" close_on_exit=false
         args "."
