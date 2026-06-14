@@ -1,6 +1,9 @@
 // Basic Session Rules
 session_name "Main Session"
+attach-to-session true
 show_startup_tips false
+default_shell "fish"
+default_mode "locked"
 
 // Core Plugin Declarations
 plugins {
@@ -160,7 +163,7 @@ keybinds clear-defaults=true {
         bind "Alt j" { MoveFocus "down"; }
         bind "Alt k" { MoveFocus "up"; }
         bind "Alt l" { MoveFocus "right"; }
-        bind "Alt n" { NewPane; }
+        bind "Alt n" { NewPane "down"; }
         bind "Alt t" {
           NewTab {
             layout "default"
@@ -176,6 +179,7 @@ keybinds clear-defaults=true {
         bind "Alt ." { GoToNextTab; }
         bind "Alt ," { GoToPreviousTab; }
         bind "Alt g" { Run "lazygit" { floating true; close_on_exit true; width "80%"; height "80%"; x "10%"; y "10%"; }; }
+        bind "Alt p" { Run "taskwarrior-tui" { floating true; close_on_exit true; width "80%"; height "80%"; x "10%"; y "10%"; }; }
     }
     shared_among "scroll" "search" {
         bind "PageDown" { PageScrollDown; }

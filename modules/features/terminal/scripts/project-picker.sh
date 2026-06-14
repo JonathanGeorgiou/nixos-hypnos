@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PROJECT=$(find ~ ~/development ~/.config ~/Projects -mindepth 1 -maxdepth 1 -type d | \
+PROJECT=$(find ~ ~/development ~/development/godot ~/.config ~/Projects -mindepth 1 -maxdepth 1 -type d | \
   fzf --height=80% --border --preview-window=right:60% --preview '
         if git -C {} rev-parse --is-inside-work-tree >/dev/null 2>&1; then
           echo "$(basename {})"

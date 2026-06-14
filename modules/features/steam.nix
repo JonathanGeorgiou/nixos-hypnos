@@ -1,6 +1,6 @@
 { self, inputs, ... }:
 {
-  flake.nixosModules.godot =
+  flake.nixosModules.gaming =
     {
       pkgs,
       config,
@@ -9,10 +9,7 @@
     }:
     {
       environment.systemPackages = [
-        pkgs.godot
-        pkgs.blender
-        pkgs.obs-studio
-        pkgs.vlc
+        pkgs.steam
       ];
 
     };

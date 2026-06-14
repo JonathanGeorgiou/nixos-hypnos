@@ -13,14 +13,20 @@
       self.nixosModules.heraklionHardware
       self.nixosModules.home
       self.nixosModules.desktop
-      self.nixosModules.nvim
+#      self.nixosModules.nvim
       self.nixosModules.terminal
-      self.nixosModules.godoblender
+      self.nixosModules.gaming
+      self.nixosModules.godot
+      self.nixosModules.nvf
+    ];
 
     nix.settings.experimental-features = [
       "nix-command"
       "flakes"
     ];
+
+    # Allow unfree packages
+    nixpkgs.config.allowUnfree = true;
 
 
     # Use the systemd-boot EFI boot loader.
@@ -82,7 +88,7 @@
       ];
     };
 
-    # needed to fix third party binary issues
+    # needed for applications to be able to run third party binaries
     programs.nix-ld.enable = true;
 
     # List packages installed in system profile.

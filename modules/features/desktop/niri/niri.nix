@@ -15,15 +15,14 @@
 
       environment.systemPackages = with pkgs; [
         wl-clipboard
-        catppuccin-cursors.mochaLight
-        catppuccin-cursors.mochaDark
+        # catppuccin-cursors.mochaLight
+        # catppuccin-cursors.mochaDark
         phinger-cursors
       ];
 
       home-manager.users.jonathan =
         { config, ... }:
         {
-
 
           # Tell Home Manager to symlink your config file directly from your dotfiles directory
           xdg.configFile."niri/config.kdl".source =

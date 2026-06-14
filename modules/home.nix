@@ -25,9 +25,9 @@
           targets.neovim.enable = false;
           targets.gnome.enable = false;
           targets.ghostty.enable = false;
-          targets.firefox = { 
+          targets.firefox = {
             enable = true;
-            profileNames = ["default"];
+            profileNames = [ "default" ];
             colors.enable = true;
           };
         };

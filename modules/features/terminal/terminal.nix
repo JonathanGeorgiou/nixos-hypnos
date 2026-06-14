@@ -3,6 +3,12 @@
   flake.nixosModules.terminal =
     { pkgs, config, lib, ... }:
     {
+      # For packages that aren't available in home-manager, or do not have good set up options
+      environment.systemPackages = [
+        pkgs.taskwarrior3
+        pkgs.taskwarrior-tui
+      ];
+
 
       imports = [ inputs.home-manager.nixosModules.home-manager ];
       home-manager.users.jonathan = { config, ... }: {
@@ -27,6 +33,8 @@
           shellAliases = {
             nrs = "sudo nixos-rebuild switch --flake ~/nixos-hypnos#heraklion";
             lg = "zellij run --floating --close-on-exit --width 80% --height 80% --x 10% --y 10% -- lazygit";
+            tt = "taskwarrior-tui";
+            vi = "nvim";
           };
         };
 
